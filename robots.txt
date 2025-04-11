@@ -1,0 +1,9 @@
+# robots.txt for harisajmal.com
+
+User-agent: *
+Disallow: /admin/
+Disallow: /404.html
+
+Allow: /
+
+Sitemap: https://harisajmal.com/sitemap.xml
