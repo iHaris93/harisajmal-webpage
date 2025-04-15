@@ -24,20 +24,13 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="preload" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 
-  <!-- Global Site Tag (GA4) -->
+  <!-- GA$ Initialize -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B95F71RF8K"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-
-    gtag('js', new Date());
-
-    // Optional: Add explicit consent if you're using CookieConsent
-    gtag('consent', 'default', {
-      'analytics_storage': 'granted' // or 'denied' for opt-in setups
-    });
-
-    gtag('config', 'G-B95F71RF8K');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-B95F71RF8K');
   </script>
 
   <!-- Tailwind CSS -->
