@@ -74,10 +74,24 @@
         <img src="https://raw.githubusercontent.com/iHaris93/harisajmal-webpage/main/haris-profile-pic.png" alt="Haris Ajmal" class="rounded-full mx-auto mb-6 border-4 border-gray-300 shadow-lg w-36 h-36 object-cover">
         <h1 class="text-3xl md:text-4xl font-bold mb-2">Haris Ajmal</h1>
         <p class="text-xl md:text-2xl font-semibold">Product Marketing | B2B SaaS | AI & Organic Growth</p>
-        <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-0 hover:opacity-50 transition-opacity">
-          <img src="https://academy.hubspot.com/hs-fs/hubfs/HCT%20icon.png?width=428&name=HCT%20icon.png" alt="HubSpot Inbound Certified Badge" class="h-8 w-9 rounded-sm" />
-          <span class="text-sm text-gray-300 dark:text-gray-300 font-medium"> HubSpot Certified </span>
-        </a>
+        <!-- Certification Ribbon -->
+        <div class="mt-4 flex justify-center items-center gap-4 flex-wrap text-sm font-medium">
+          <!-- HubSpot -->
+          <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-orange-100 dark:hover:bg-orange-900 hover:text-orange-700 transition-all duration-200 shadow-sm hover:shadow-md">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTjI1Fvx1zByVuF-mPYT6CBA3AD_Yaks4mw&s" alt="HubSpot" class="h-4 w-4 opacity-80" />
+            <span>HubSpot Certified</span>
+          </a>
+          <!-- Coursera -->
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-700 transition-all duration-200 shadow-sm hover:shadow-md">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4DHizsuJ9Tr85EwJ1MWLLuQod3njbO7BPA&s" alt="Coursera" class="h-4 w-4 opacity-80" />
+            <span>Coursera Certified</span>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-sky-100 dark:hover:bg-sky-900 hover:text-sky-700 transition-all duration-200 shadow-sm hover:shadow-md">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn" class="h-4 w-4 opacity-80" />
+            <span>LinkedIn Certified</span>
+          </a>
+        </div>
         <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" onclick="gtag('event', 'click', { event_category: 'CTA', event_label: 'LinkedIn Button' })" class="inline-block mt-6 px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300"> Connect with me on LinkedIn </a>
       </div>
     </header>
@@ -140,11 +154,30 @@
       </section>
       </section>
       <section id="certifications" class="py-10 text-center">
-        <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-6">Certifications</h2>
-        <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" class="inline-block transition-transform hover:scale-105">
-          <img src="https://academy.hubspot.com/hs-fs/hubfs/HCT%20icon.png?width=428&name=HCT%20icon.png" alt="HubSpot Inbound Certified Badge" class="h-16 md:h-20 mx-auto rounded-md shadow-md" />
-        </a>
-        <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic"> HubSpot Inbound Marketing (Certified) </p>
+        <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-10">Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
+          <!-- HubSpot -->
+          <div class="flex flex-col items-center">
+            <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-105">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpTjI1Fvx1zByVuF-mPYT6CBA3AD_Yaks4mw&s" alt="HubSpot Inbound Certified Badge" class="h-10 w-10 object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic"> HubSpot Inbound Certified </p>
+          </div>
+          <!-- Coursera (centered column) -->
+          <div class="flex flex-col items-center">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-105">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv4DHizsuJ9Tr85EwJ1MWLLuQod3njbO7BPA&s" alt="Coursera Badge" class="h-10 w-10 object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic"> Foundations of Digital Marketing & E-commerce </p>
+          </div>
+          <!-- LinkedIn Learning -->
+          <div class="flex flex-col items-center">
+            <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" class="transition-transform hover:scale-105">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" alt="LinkedIn Learning Badge" class="h-10 w-10 object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic"> Customer Service </p>
+          </div>
+        </div>
       </section>
       <section id="contact" class="py-10 text-center">
         <div class="mb-6">
