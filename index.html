@@ -98,45 +98,39 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <button id="toggleDark" class="fixed top-4 right-4 z-50 bg-white hover:bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100 border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-full shadow-md transition"> 🌙 Dark Mode </button>
-    <!-- HERO SECTION -->
-    <section class="w-full bg-gray-300 dark:bg-gray-900 py-10 px-4 transition-colors duration-300">
-      <div class="max-w-7xl mx-auto bg-gray-100 dark:bg-gray-700 p-10 rounded-3xl shadow-[10px_10px_30px_#d1d9e6,_-10px_-10px_30px_#ffffff] dark:shadow-[10px_10px_30px_#1f1f1f,_-10px_-10px_30px_#2e2e2e] text-center">
-        <!-- Profile Image -->
-        <img src="assets/profile/haris-profile-pic.png" alt="Haris Ajmal" class="w-32 h-32 rounded-full mx-auto mb-6 border-[6px] border-gray-300 dark:border-gray-800 shadow-inner" />
-        <!-- Name and Title -->
-        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-2">Haris Ajmal</h1>
-        <p class="text-lg md:text-xl font-semibold text-gray-600 dark:text-gray-300">Product Marketing | B2B SaaS | AI & Organic Growth</p>
+    <header class="custom-hero-bg text-white py-10 md:py-16 px-4 md:px-8">
+      <div class="container mx-auto text-center">
+        <img src="assets/profile/haris-profile-pic.png" alt="Haris Ajmal" class="rounded-full mx-auto mb-6 border-4 border-gray-300 shadow-lg w-36 h-36 object-cover">
+        <h1 class="text-3xl md:text-4xl font-bold mb-2">Haris Ajmal</h1>
+        <p class="text-xl md:text-2xl font-semibold">Product Marketing | B2B SaaS | AI & Organic Growth</p>
         <!-- Certification Ribbon -->
-        <div class="mt-6 flex justify-center items-center gap-4 flex-wrap text-sm font-medium">
+        <div class="mt-4 flex justify-center items-center gap-4 flex-wrap text-sm font-medium">
           <!-- HubSpot -->
-          <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-orange-200 dark:hover:bg-orange-800 transition-all duration-200 shadow-sm hover:shadow-md">
+          <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', { event_category: 'Certifications', event_label: 'HubSpot Certified', value: 1 })" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-orange-100 dark:hover:bg-orange-900 hover:text-orange-700 transition-all duration-200 shadow-sm hover:shadow-md">
             <img src="assets/icons/hubspot.png" alt="HubSpot" class="h-4 w-4 opacity-80" />
             <span>HubSpot Certified</span>
           </a>
           <!-- Coursera -->
-          <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-blue-200 dark:hover:bg-blue-800 transition-all duration-200 shadow-sm hover:shadow-md">
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', { event_category: 'Certifications', event_label: 'Coursera Certified', value: 1 })" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-700 transition-all duration-200 shadow-sm hover:shadow-md">
             <img src="assets/icons/coursera.png" alt="Coursera" class="h-4 w-4 opacity-80" />
             <span>Coursera Certified</span>
           </a>
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-200 hover:bg-sky-200 dark:hover:bg-sky-800 transition-all duration-200 shadow-sm hover:shadow-md">
-            <img src="assets/icons/linkedin.png" alt="LinkedIn Learning" class="h-4 w-4 opacity-80" />
+          <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', { event_category: 'Certifications', event_label: 'LinkedIn Certified', value: 1 })" class="flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-sky-100 dark:hover:bg-sky-900 hover:text-sky-700 transition-all duration-200 shadow-sm hover:shadow-md">
+            <img src="assets/icons/linkedin.png" alt="LinkedIn Learning Badge" class="h-4 w-4 opacity-80" />
             <span>LinkedIn Certified</span>
           </a>
         </div>
-        <!-- CTA Button -->
-        <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" onclick="gtag('event', 'click', { event_category: 'CTA', event_label: 'LinkedIn Button' })" class="inline-block mt-8 px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300"> Connect on LinkedIn </a>
+        <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" onclick="gtag('event', 'click', { event_category: 'CTA', event_label: 'LinkedIn Button' })" class="inline-block mt-6 px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300"> Connect with me on LinkedIn </a>
       </div>
-    </section>
-    <!-- MAIN CONTENT -->
-    <main class="w-full bg-white dark:bg-gray-900 transition-colors duration-300">
-      <!-- ABOUT ME SECTION -->
-      <section id="about-me" class="py-10 px-4">
-        <div class="max-w-7xl mx-auto bg-gray-100 dark:bg-gray-700 p-8 md:p-10 rounded-3xl shadow-[inset_8px_8px_20px_#d1d9e6,_inset_-8px_-8px_20px_#ffffff] dark:shadow-[inset_8px_8px_20px_#1f1f1f,_inset_-8px_-8px_20px_#2e2e2e] text-lg leading-relaxed text-gray-700 dark:text-gray-200 transition-all duration-300">
-          <p class="mb-6"> Experienced Product Marketing Manager specializing in B2B Tech and SaaS, with 5+ years of hands-on experience in content strategy, SEO, process automation, and inbound marketing. I come from a software development background, which helps me understand the technical side of products and translate it into value-driven messaging that resonates with buyers. </p>
-          <p class="mb-6"> I'm a strong advocate of AI-first work productivity; using AI tools, agents, and automation to scale content, optimize workflows, and move faster without losing quality. From HubSpot to CapCut, GSC to GPT; if it saves time and adds value, I’m using it. </p>
-          <p class="font-semibold mb-2"> What you’ll find me doing at <a href="https://www.sighthound.com" target="_blank" rel="noopener noreferrer" class="text-blue-600 dark:text-blue-400 hover:underline">Sighthound</a>: </p>
-          <ul class="list-disc list-inside mb-6 space-y-1">
+    </header>
+    <main class="container mx-auto py-12 px-4 md:px-8">
+      <section id="about-me" class="py-10">
+        <div class="text-lg leading-relaxed text-gray-700 dark:text-gray-200">
+          <p class="mb-6">Experienced Product Marketing Manager specializing in B2B Tech and SaaS, with 5+ years of hands-on experience in content strategy, SEO, process automation, and inbound marketing. I come from a software development background, which helps me understand the technical side of products and translate it into value-driven messaging that resonates with buyers.</p>
+          <p class="mb-6">I'm a strong advocate of AI-first work productivity; using AI tools, agents, and automation to scale content, optimize workflows, and move faster without losing quality. From HubSpot to CapCut, GSC to GPT; if it saves time and adds value, I’m using it.</p>
+          <strong>What you’ll find me doing at <a href="https://www.sighthound.com" class="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Sighthound</a>: </strong>
+          <ul class="list-disc list-inside mb-6">
             <li>Running inbound marketing strategies</li>
             <li>Reviewing and nurturing leads in HubSpot</li>
             <li>Building and tweaking automation workflows and sequences</li>
@@ -147,109 +141,109 @@
             <li>Keeping website copy and social posts on point</li>
             <li>Designing and updating sales enablement materials like brochures, factsheets, technical spec documents, partner decks, and more</li>
           </ul>
-          <p> Oh! And not to forget the NPS campaigns and feedback loops to keep us aligned with what customers really want. </p>
+          <p>Oh! And not to forget the NPS campaigns and feedback loops to keep us aligned with what customers really want. </p>
         </div>
       </section>
-      <!-- SKILLS SECTION -->
-      <section id="skills" class="py-10 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
-        <div class="max-w-5xl mx-auto">
-          <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-10 text-center">Skills & Expertise</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- COLUMN 1 -->
-            <div class="space-y-4">
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Inbound Marketing</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Lead Nurturing</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Outbound Email Marketing</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Lifecycle Campaigns</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Search Engine Optimization (SEO)</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Content Calendar Management</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Revenue-Focused Storytelling</div>
-            </div>
-            <!-- COLUMN 2 -->
-            <div class="space-y-4">
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Go-to-Market (GTM) Strategy</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Messaging & Positioning</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Product Launches</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Value Proposition Design</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Competitor Analysis</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Market Research</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Sales Enablement</div>
-            </div>
-            <!-- COLUMN 3 -->
-            <div class="space-y-4">
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">HubSpot CRM</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Google Search Console (GSC)</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Google Analytics (GA4)</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Funnel Optimization</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Marketing Automation</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Cross-Functional Collaboration</div>
-              <div class="bg-white dark:bg-gray-800 px-6 py-4 rounded-xl shadow-inner transition hover:shadow-md hover:-translate-y-1">Data-Driven Decision Making</div>
-            </div>
+      <section class="py-10 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md px-6 md:px-10">
+        <div class="text-center mb-8">
+          <h2 class="text-3xl font-semibold text-gray-800 dark:text-white">Skills & Expertise</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Column 1 -->
+          <ul class="list-none space-y-2">
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Go-to-Market (GTM) Strategy</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Messaging & Positioning</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Product Launches</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Value Propositioning</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Competitor Research & Analysis</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Market Research</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Sales Enablement</li>
+          </ul>
+          <!-- Column 2 -->
+          <ul class="list-none space-y-2">
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Inbound Marketing</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Lead Nurturing</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Outbound Email Marketing</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Lifecycle Campaigns</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Content Calendar Management</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Revenue-Focused Storytelling</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Search Engine Optimization (SEO)</li>
+          </ul>
+          <!-- Column 3 -->
+          <ul class="list-none space-y-2">
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">HubSpot CRM</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Marketing Automation</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Google Analytics (GA4)</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Google Search Console (GSC)</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Funnel Optimization</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Data-Driven Decision Making</li>
+            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transition duration-300 ease-in-out hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300 hover:shadow-md">Cross-Functional Collaboration</li>
+          </ul>
+        </div>
+      </section>
+      </section>
+      <section id="certifications" class="py-10 text-center">
+        <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-10">Certifications</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
+          <!-- HubSpot -->
+          <div class="flex flex-col items-center">
+            <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', { event_category: 'Certifications', event_label: 'HubSpot Certified', value: 1 })" class="transition-transform hover:scale-105">
+              <img src="assets/icons/hubspot.png" alt="HubSpot Inbound Certified Badge" class="h-10 w-10 object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic">HubSpot Inbound Certified</p>
+          </div>
+          <!-- Coursera -->
+          <div class="flex flex-col items-center">
+            <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', { event_category: 'Certifications', event_label: 'Coursera Certified', value: 1 })" class="transition-transform hover:scale-105">
+              <img src="assets/icons/coursera.png" alt="Coursera Badge" class="h-10 w-10 object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic">Foundations of Digital Marketing & E-commerce</p>
+          </div>
+          <!-- LinkedIn Learning -->
+          <div class="flex flex-col items-center">
+            <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" onclick="gtag('event', 'click', { event_category: 'Certifications', event_label: 'LinkedIn Certified', value: 1 })" class="transition-transform hover:scale-105">
+              <img src="assets/icons/linkedin.png" alt="LinkedIn Learning Badge" class="h-10 w-10 object-contain opacity-90 hover:opacity-100 transition" />
+            </a>
+            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic">Customer Service</p>
           </div>
         </div>
       </section>
-      <!-- CERTIFICATIONS SECTION -->
-      <section id="certifications" class="py-10 px-4">
-        <div class="max-w-7xl mx-auto bg-gray-100 dark:bg-gray-700 p-8 md:p-10 rounded-3xl shadow-[inset_8px_8px_20px_#d1d9e6,_inset_-8px_-8px_20px_#ffffff] dark:shadow-[inset_8px_8px_20px_#1f1f1f,_inset_-8px_-8px_20px_#2e2e2e] transition-all duration-300 text-center">
-          <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-10">Certifications</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
-            <!-- HubSpot -->
-            <div class="flex flex-col items-center transition-transform hover:scale-105">
-              <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer">
-                <img src="assets/icons/hubspot.png" alt="HubSpot" class="h-12 w-12 object-contain mb-2" />
-              </a>
-              <p class="text-sm text-gray-600 dark:text-gray-300 italic">HubSpot Inbound Certified</p>
-            </div>
-            <!-- Coursera -->
-            <div class="flex flex-col items-center transition-transform hover:scale-105">
-              <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer">
-                <img src="assets/icons/coursera.png" alt="Coursera" class="h-12 w-12 object-contain mb-2" />
-              </a>
-              <p class="text-sm text-gray-600 dark:text-gray-300 italic">Foundations of Digital Marketing & E-commerce</p>
-            </div>
-            <!-- LinkedIn Learning -->
-            <div class="flex flex-col items-center transition-transform hover:scale-105">
-              <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer">
-                <img src="assets/icons/linkedin.png" alt="LinkedIn Learning" class="h-12 w-12 object-contain mb-2" />
-              </a>
-              <p class="text-sm text-gray-600 dark:text-gray-300 italic">Customer Service</p>
-            </div>
-          </div>
+      <section id="contact" class="py-10 text-center">
+        <div class="mb-6">
+          <h2 class="text-3xl font-semibold text-gray-800 dark:text-white">Get in Touch</h2>
         </div>
+        <p class="text-lg text-gray-700 dark:text-gray-200 mb-4">Have a project in mind, or just want to connect? Let's talk!</p>
+        <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" onclick="gtag('event', 'click', { 
+     event_category: 'CTA', 
+     event_label: 'LinkedIn Button' 
+   })" class="inline-block px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300 text-lg"> Connect on LinkedIn </a>
       </section>
-      <!-- CTA SECTION -->
-      <section id="contact" class="py-10 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
-        <div class="max-w-5xl mx-auto text-center">
-          <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-6">Let’s Connect</h2>
-          <p class="text-lg text-gray-700 dark:text-gray-300 mb-8">Have a project in mind or just want to say hi? Let’s talk!</p>
-          <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" class="inline-block px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300 text-lg"> Connect on LinkedIn </a>
-        </div>
-      </section>
-      <footer class="bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-4 text-center">
-        <p>© <span id="year"></span> Haris Ajmal. All rights reserved. </p>
-      </footer>
-      <script>
-        const htmlEl = document.documentElement;
-        const darkToggle = document.getElementById('toggleDark');
+    </main>
+    <footer class="bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-4 text-center">
+      <p>© <span id="year"></span> Haris Ajmal. All rights reserved. </p>
+    </footer>
+<script>
+      const htmlEl = document.documentElement;
+      const darkToggle = document.getElementById('toggleDark');
 
-        function updateToggleLabel(isDark) {
-          darkToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
-        }
+      function updateToggleLabel(isDark) {
+        darkToggle.textContent = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+      }
 
-        function applyDarkMode(pref) {
-          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          const shouldEnable = pref === 'dark' || (!pref && prefersDark);
-          htmlEl.classList.toggle('dark', shouldEnable);
-          updateToggleLabel(shouldEnable);
-        }
-        applyDarkMode(localStorage.getItem('theme'));
-        darkToggle.addEventListener('click', () => {
-          const isDark = htmlEl.classList.toggle('dark');
-          localStorage.setItem('theme', isDark ? 'dark' : 'light');
-          updateToggleLabel(isDark);
-        });
-      </script>
-      <!-- Cookie Consent Banner
+      function applyDarkMode(pref) {
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const shouldEnable = pref === 'dark' || (!pref && prefersDark);
+        htmlEl.classList.toggle('dark', shouldEnable);
+        updateToggleLabel(shouldEnable);
+      }
+      applyDarkMode(localStorage.getItem('theme'));
+      darkToggle.addEventListener('click', () => {
+        const isDark = htmlEl.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateToggleLabel(isDark);
+      });
+    </script>
+    <!-- Cookie Consent Banner
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" /><script>
       window.addEventListener('load', function() {
         window.cookieconsent.initialise({
@@ -280,14 +274,15 @@
               gtag('consent', 'update', {
                 'analytics_storage': 'denied'
               });
+              ha
             }
           }
         });
       });
     </script>
     -->
-      <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-      </script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
