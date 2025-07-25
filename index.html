@@ -111,6 +111,7 @@
           </a>
         </div>
         <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" onclick="gtag('event', 'click', { event_category: 'CTA', event_label: 'LinkedIn Button' })" class="inline-block mt-6 px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300"> Connect with me on LinkedIn </a>
+        <a href="https://www.buymeacoffee.com/harisajmal" target="_blank" onclick="gtag('event', 'click', { event_category: 'CTA', event_label: 'Buy Me a Coffee Button' })" class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-md transition duration-300"> ☕ Buy Me a Coffee </a>
       </div>
     </header>
     <main class="container mx-auto py-12 px-4 md:px-8">
@@ -200,11 +201,13 @@
         <div class="text-center mb-6">
           <h2 class="text-3xl font-semibold text-gray-800 dark:text-white">Get in Touch</h2>
         </div>
-        <p class="text-lg text-gray-700 dark:text-gray-200 mb-4">Have a project in mind, or just want to connect? Let's talk!</p>
-        <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" onclick="gtag('event', 'click', { 
-     event_category: 'CTA', 
-     event_label: 'LinkedIn Button' 
-   })" class="inline-block px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300 text-lg"> Connect on LinkedIn </a>
+        <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">Have a project in mind, or just want to connect? Let's talk!</p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+          <!-- LinkedIn Button -->
+          <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" onclick="gtag('event', 'click', { event_category: 'CTA', event_label: 'LinkedIn Button' })" class="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transition duration-300 text-lg"> Connect on LinkedIn </a>
+          <!-- Buy Me a Coffee Button -->
+          <a href="https://www.buymeacoffee.com/harisajmal" target="_blank" onclick="gtag('event', 'click', { event_category: 'CTA', event_label: 'Buy Me a Coffee Button' })" class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-md transition duration-300 text-lg"> ☕ Buy Me a Coffee </a>
+        </div>
       </section>
     </main>
     <footer class="bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 py-4 text-center">
@@ -232,7 +235,9 @@
       });
     </script>
     <!-- Cookie Consent Banner -->
-    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" /><script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script>
       window.addEventListener('load', function() {
         window.cookieconsent.initialise({
           palette: {
@@ -267,7 +272,6 @@
         });
       });
     </script>
- 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
     </script>
