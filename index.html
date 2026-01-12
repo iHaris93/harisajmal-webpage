@@ -78,7 +78,7 @@
     <!-- a11y helpers -->
     <style>
       html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif; transition: background-color .3s, color .3s; }
-      .custom-hero-bg { background: linear-gradient(135deg, #4b5563 0%, #374151 100%); }
+      .custom-hero-bg { background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.35), transparent 55%), radial-gradient(circle at bottom right, rgba(129, 140, 248, 0.35), transparent 55%), linear-gradient(135deg, #1e3a8a 0%, #4f46e5 40%, #020617 100%); }
       @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; } }
     </style>
   </head>
@@ -94,37 +94,37 @@
     <button id="toggleDark" type="button" aria-live="polite" class="fixed top-4 right-4 z-50 bg-white hover:bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-100 border border-gray-300 dark:border-gray-600 px-4 py-2 rounded-full shadow-md transition">🌙 Dark Mode</button>
 
     <!-- ===================== HERO ===================== -->
-    <header class="custom-hero-bg text-white py-10 md:py-16 px-4 md:px-8">
-      <div class="container mx-auto text-center">
-        <img src="assets/profile/haris-profile-pic.png" alt="Portrait of Haris Ajmal" width="144" height="144" class="rounded-full mx-auto mb-6 border-4 border-gray-300 shadow-lg w-36 h-36 object-cover" loading="eager" fetchpriority="high" />
-        <h1 class="text-3xl md:text-4xl font-bold mb-2">Haris Ajmal</h1>
-        <p class="text-xl md:text-2xl font-semibold">
-          Product Marketing | B2B SaaS |
+    <header class="custom-hero-bg text-white py-12 md:py-20 px-4 md:px-8">
+      <div class="container mx-auto text-center max-w-4xl">
+        <img src="assets/profile/haris-profile-pic.png" alt="Portrait of Haris Ajmal" width="144" height="144" class="rounded-full mx-auto mb-6 border-4 border-white/70 shadow-lg w-36 h-36 object-cover" loading="eager" fetchpriority="high" />
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight mb-4">Haris Ajmal</h1>
+        <p class="text-xs md:text-sm tracking-[0.2em] uppercase text-indigo-100/80 mb-2">Product Marketing &middot; B2B SaaS</p>
+        <p class="text-2xl md:text-3xl font-semibold">
           <span id="hero-typed" class="inline-block align-baseline"></span>
         </p>
 
         <!-- Certification Ribbon -->
         <div class="mt-4 flex justify-center items-center gap-4 flex-wrap text-sm font-medium">
           <!-- HubSpot -->
-          <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="HubSpot Certified" class="group flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/90 dark:bg-gray-800/80 text-gray-900 dark:text-gray-200 hover:bg-orange-100 dark:hover:bg-orange-900 hover:text-orange-700 transition-colors duration-200 shadow-sm hover:shadow-md">
+          <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="HubSpot Certified" class="group flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/90 dark:bg-gray-800/80 text-gray-900 dark:text-gray-200 shadow-sm transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-orange-100 dark:hover:bg-orange-900 hover:text-orange-700">
             <img src="assets/icons/hubspot.png" alt="HubSpot" class="h-4 w-4 opacity-90 transition-transform duration-200 group-hover:scale-110" width="16" height="16" loading="lazy" />
             <span>HubSpot Certified</span>
           </a>
           <!-- Coursera -->
-          <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="Coursera Certified" class="group flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/90 dark:bg-gray-800/80 text-gray-900 dark:text-gray-200 hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md">
+          <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="Coursera Certified" class="group flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/90 dark:bg-gray-800/80 text-gray-900 dark:text-gray-200 shadow-sm transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-100 dark:hover:bg-blue-900 hover:text-blue-700">
             <img src="assets/icons/coursera.png" alt="Coursera" class="h-4 w-4 opacity-90 transition-transform duration-200 group-hover:scale-110" width="16" height="16" loading="lazy" />
             <span>Coursera Certified</span>
           </a>
           <!-- LinkedIn Learning -->
-          <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="LinkedIn Certified" class="group flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/90 dark:bg-gray-800/80 text-gray-900 dark:text-gray-200 hover:bg-sky-100 dark:hover:bg-sky-900 hover:text-sky-700 transition-colors duration-200 shadow-sm hover:shadow-md">
+          <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="LinkedIn Certified" class="group flex items-center gap-2 px-3 py-1 rounded-full bg-gray-100/90 dark:bg-gray-800/80 text-gray-900 dark:text-gray-200 shadow-sm transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-sky-100 dark:hover:bg-sky-900 hover:text-sky-700">
             <img src="assets/icons/linkedin.png" alt="LinkedIn" class="h-4 w-4 opacity-90 transition-transform duration-200 group-hover:scale-110" width="16" height="16" loading="lazy" />
             <span>LinkedIn Certified</span>
           </a>
         </div>
 
         <div class="mt-6 flex flex-col sm:flex-row justify-center items-center gap-3">
-          <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="LinkedIn Button" class="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg">Connect on LinkedIn</a>
-          <a href="https://www.buymeacoffee.com/harisajmal" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="Buy Me a Coffee Button" class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg">☕ Buy Me a Coffee</a>
+          <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="LinkedIn Button" class="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg ring-1 ring-black/5 dark:ring-white/15">Connect on LinkedIn</a>
+          <a href="https://www.buymeacoffee.com/harisajmal" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="Buy Me a Coffee Button" class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg ring-1 ring-black/5 dark:ring-white/15">☕ Buy Me a Coffee</a>
         </div>
       </div>
     </header>
@@ -132,102 +132,176 @@
     <!-- ===================== MAIN ===================== -->
     <main class="container mx-auto py-12 px-4 md:px-8">
       <section id="about-me" class="py-10" data-aos="fade-up">
-        <div class="text-lg leading-relaxed text-gray-700 dark:text-gray-200">
-          <p class="mb-6">Experienced Product Marketing Manager specializing in B2B Tech and SaaS, with 5+ years of hands-on experience in content strategy, SEO, process automation, and inbound marketing. I come from a software development background, which helps me understand the technical side of products and translate it into value-driven messaging that resonates with buyers.</p>
-          <p class="mb-6">I'm a strong advocate of AI-first work productivity; using AI tools, agents, and automation to scale content, optimize workflows, and move faster without losing quality. From HubSpot to CapCut, GSC to GPT; if it saves time and adds value, I’m using it.</p>
-          <p class="font-semibold mb-2">What you’ll find me doing at <a href="https://www.sighthound.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Sighthound</a>:</p>
-          <ul class="list-disc list-inside mb-6">
-            <li>Running inbound marketing strategies</li>
-            <li>Reviewing and nurturing leads in HubSpot</li>
-            <li>Building and tweaking automation workflows and sequences</li>
-            <li>Managing email campaigns that actually get replies</li>
-            <li>Creating content that informs and engages</li>
-            <li>Collaborating with Sales and Customer Success teams</li>
-            <li>Researching market trends and competitors</li>
-            <li>Keeping website copy and social posts on point</li>
-            <li>Designing and updating sales enablement materials like brochures, factsheets, technical spec documents, partner decks, and more</li>
-          </ul>
-          <p>Oh! And not to forget the NPS campaigns and feedback loops to keep us aligned with what customers really want.</p>
+        <div class="md:grid md:grid-cols-2 md:gap-10 items-start text-lg leading-relaxed text-gray-700 dark:text-gray-200">
+          <div class="mb-8 md:mb-0 space-y-4">
+            <h2 class="text-2xl font-semibold text-gray-900 dark:text-white mb-4">At a glance</h2>
+            <div class="space-y-3">
+              <div class="rounded-xl bg-white/80 dark:bg-gray-900/70 shadow-sm border border-blue-100/70 dark:border-blue-900/60 ring-1 ring-blue-500/10 px-4 py-3">
+                <p class="text-xs font-semibold tracking-wide text-gray-500 dark:text-gray-400 uppercase mb-1">Experience</p>
+                <p class="text-gray-900 dark:text-gray-50">6+ years in B2B SaaS product marketing</p>
+              </div>
+              <div class="rounded-xl bg-white/80 dark:bg-gray-900/70 shadow-sm border border-blue-100/70 dark:border-blue-900/60 ring-1 ring-blue-500/10 px-4 py-3">
+                <p class="text-xs font-semibold tracking-wide text-gray-500 dark:text-gray-400 uppercase mb-1">Focus</p>
+                <p class="text-gray-900 dark:text-gray-50">AI-first workflows, inbound, and GTM strategy</p>
+              </div>
+              <div class="rounded-xl bg-white/80 dark:bg-gray-900/70 shadow-sm border border-blue-100/70 dark:border-blue-900/60 ring-1 ring-blue-500/10 px-4 py-3">
+                <p class="text-xs font-semibold tracking-wide text-gray-500 dark:text-gray-400 uppercase mb-1">Tools</p>
+                <p class="text-gray-900 dark:text-gray-50">HubSpot, Squarespace, Webflow, GSC, GA4, Warp</p>
+              </div>
+            </div>
+            <div class="mt-6 space-y-3">
+              <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Certifications</h3>
+              <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
+                <li>
+                  <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="HubSpot Certified" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-300">
+                    <img src="assets/icons/hubspot.png" alt="HubSpot" class="h-5 w-5 object-contain" width="20" height="20" loading="lazy" />
+                    <span class="text-gray-900 dark:text-gray-50"><span class="font-semibold">Inbound</span><span class="font-normal text-gray-700 dark:text-gray-300"> · HubSpot</span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="Coursera Certified" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-300">
+                    <img src="assets/icons/coursera.png" alt="Coursera" class="h-5 w-5 object-contain" width="20" height="20" loading="lazy" />
+                    <span class="text-gray-900 dark:text-gray-50"><span class="font-semibold">Foundations of Digital Marketing &amp; E-commerce</span><span class="font-normal text-gray-700 dark:text-gray-300"> · Google Coursera</span></span>
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="LinkedIn Certified" class="flex items-center gap-2 hover:text-blue-600 dark:hover:text-blue-300">
+                    <img src="assets/icons/linkedin.png" alt="LinkedIn Learning" class="h-5 w-5 object-contain" width="20" height="20" loading="lazy" />
+                    <span class="text-gray-900 dark:text-gray-50"><span class="font-semibold">Customer Service</span><span class="font-normal text-gray-700 dark:text-gray-300"> · LinkedIn Learning</span></span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-6 space-y-3">
+              <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Recent Experience</h3>
+              <div class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
+                <p><span class="font-semibold text-gray-900 dark:text-gray-50">2023 - Present</span>: B2B Product Marketing . Sighthound Inc.</p>
+                <p><span class="font-semibold text-gray-900 dark:text-gray-50">2020 - 2023</span>: B2B &amp; B2C E-commerce Marketing . Enixgen Digital</p>
+                <p><span class="font-semibold text-gray-900 dark:text-gray-50">Earlier</span>: Unity Game Development . Creatrixe Software</p>
+              </div>
+            </div>
+          </div>
+          <div class="max-w-2xl mx-auto md:mx-0">
+            <p class="mb-6">Experienced Product Marketing Manager specializing in B2B Tech and SaaS, with 5+ years of hands-on experience in content strategy, SEO, process automation, and inbound marketing. I come from a software development background, which helps me understand the technical side of products and translate it into value-driven messaging that resonates with buyers.</p>
+            <p class="mb-6">I'm a strong advocate of AI-first work productivity; using AI tools, agents, and automation to scale content, optimize workflows, and move faster without losing quality. From HubSpot to CapCut, GSC to GPT; if it saves time and adds value, I'm using it.</p>
+            <p class="font-semibold mb-3">What you'll find me doing at <a href="https://www.sighthound.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Sighthound</a>:</p>
+            <ul class="list-disc list-inside mb-6 space-y-1.5">
+              <li class="text-gray-700 dark:text-gray-200">Running inbound marketing strategies</li>
+              <li class="text-gray-700 dark:text-gray-200">Reviewing and nurturing leads in HubSpot</li>
+              <li class="text-gray-700 dark:text-gray-200">Building and tweaking automation workflows and sequences</li>
+              <li class="text-gray-700 dark:text-gray-200">Managing email campaigns that actually get replies</li>
+              <li class="text-gray-700 dark:text-gray-200">Creating content that informs and engages</li>
+              <li class="text-gray-700 dark:text-gray-200">Collaborating with Sales and Customer Success teams</li>
+              <li class="text-gray-700 dark:text-gray-200">Researching market trends and competitors</li>
+              <li class="text-gray-700 dark:text-gray-200">Keeping website copy and social posts on point</li>
+              <li class="text-gray-700 dark:text-gray-200">Designing and updating sales enablement materials like brochures, factsheets, technical spec documents, partner decks, and more</li>
+            </ul>
+            <p>Oh! And not to forget the NPS campaigns and feedback loops to keep us aligned with what customers really want.</p>
+          </div>
         </div>
       </section>
 
       <!-- Skills -->
       <section class="py-10 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md px-6 md:px-10" data-aos="fade-up" data-aos-delay="100">
         <div class="text-center mb-8">
-          <h2 class="text-3xl font-semibold text-gray-800 dark:text-white relative inline-block">
-            Skills &amp; Expertise
-            <span class="absolute left-1/2 -translate-x-1/2 -bottom-1 h-1 w-3/4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
-          </h2>
+          <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Skills &amp; Expertise</h2>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <ul class="list-none space-y-2">
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="0">Go-to-Market (GTM) Strategy</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="50">Messaging &amp; Positioning</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="100">Product Launches</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="150">Value Propositioning</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="200">Competitor Research &amp; Analysis</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="250">Market Research</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="300">Sales Enablement</li>
-          </ul>
-          <ul class="list-none space-y-2">
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="0">Inbound Marketing</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="50">Lead Nurturing</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="100">Outbound Email Marketing</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="150">Lifecycle Campaigns</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="200">Content Calendar Management</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="250">Revenue-Focused Storytelling</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="300">Search Engine Optimization (SEO)</li>
-          </ul>
-          <ul class="list-none space-y-2">
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="0">HubSpot CRM</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="50">Marketing Automation</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="100">Google Analytics (GA4)</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="150">Google Search Console (GSC)</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="200">Funnel Optimization</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="250">Data-Driven Decision Making</li>
-            <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="300">Cross-Functional Collaboration</li>
-          </ul>
+          <div class="space-y-3">
+            <ul class="list-none space-y-2">
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="0">
+                <span>Go-to-Market (GTM) Strategy</span>
+                <span class="ml-2 inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900 px-2 py-0.5 text-[11px] font-semibold text-blue-700 dark:text-blue-200">Core</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="50">
+                <span>Messaging &amp; Positioning</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="100">
+                <span>Product Launches</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="150">
+                <span>Value Propositioning</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="200">
+                <span>Competitor Research &amp; Analysis</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="250">
+                <span>Market Research</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="300">
+                <span>Sales Enablement</span>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <ul class="list-none space-y-2">
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="0">
+                <span>Inbound Marketing</span>
+                <span class="ml-2 inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900 px-2 py-0.5 text-[11px] font-semibold text-blue-700 dark:text-blue-200">Core</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="50">
+                <span>Lead Nurturing</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="100">
+                <span>Outbound Email Marketing</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="150">
+                <span>Lifecycle Campaigns</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="200">
+                <span>Content Calendar Management</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="250">
+                <span>Revenue-Focused Storytelling</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="300">
+                <span>Search Engine Optimization (SEO)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-3">
+            <ul class="list-none space-y-2">
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="0">
+                <span>HubSpot CRM</span>
+                <span class="ml-2 inline-flex items-center rounded-full bg-blue-100 dark:bg-blue-900 px-2 py-0.5 text-[11px] font-semibold text-blue-700 dark:text-blue-200">Core</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="50">
+                <span>Marketing Automation</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="100">
+                <span>Google Analytics (GA4)</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="150">
+                <span>Google Search Console (GSC)</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="200">
+                <span>Funnel Optimization</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="250">
+                <span>Data-Driven Decision Making</span>
+              </li>
+              <li class="bg-white dark:bg-gray-700 rounded-md shadow-sm px-4 py-2 flex items-center justify-between gap-3 transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:bg-blue-50 hover:text-blue-700 dark:hover:text-blue-300" data-aos="fade-up" data-aos-delay="300">
+                <span>Cross-Functional Collaboration</span>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <!-- Certifications (centered grid) -->
-      <section id="certifications" class="py-10 text-center" data-aos="fade-up" data-aos-delay="200">
-        <h2 class="text-3xl font-semibold text-gray-800 dark:text-gray-100 mb-10 relative inline-block">
-          Certifications
-          <span class="absolute left-1/2 -translate-x-1/2 -bottom-1 h-1 w-3/4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
-        </h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-10 place-items-center">
-          <div class="group flex flex-col items-center transform transition-transform duration-200 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="0">
-            <a href="https://app.hubspot.com/academy/achievements/3yt50v9f/en/1/haris-ajmal-rana/inbound" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="HubSpot Certified" class="transition-transform duration-200 group-hover:scale-110">
-              <img src="assets/icons/hubspot.png" alt="HubSpot Inbound Certified Badge" class="h-10 w-10 object-contain opacity-90 transition-opacity duration-200 group-hover:opacity-100" width="40" height="40" loading="lazy" />
-            </a>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic transition-colors duration-200 group-hover:text-gray-700 dark:group-hover:text-gray-200">HubSpot Inbound Certified</p>
-          </div>
-          <div class="group flex flex-col items-center transform transition-transform duration-200 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
-            <a href="https://www.coursera.org/account/accomplishments/certificate/XJ944W5G8SQW" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="Coursera Certified" class="transition-transform duration-200 group-hover:scale-110">
-              <img src="assets/icons/coursera.png" alt="Coursera Badge" class="h-10 w-10 object-contain opacity-90 transition-opacity duration-200 group-hover:opacity-100" width="40" height="40" loading="lazy" />
-            </a>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic transition-colors duration-200 group-hover:text-gray-700 dark:group-hover:text-gray-200">Foundations of Digital Marketing &amp; E‑commerce</p>
-          </div>
-          <div class="group flex flex-col items-center transform transition-transform duration-200 hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
-            <a href="https://www.linkedin.com/learning/certificates/524938b1c61ac2914899506421097a7e5b7b28da705a3098ace9c273e3719a7e" target="_blank" rel="noopener noreferrer" data-gtag-category="Certifications" data-gtag-label="LinkedIn Certified" class="transition-transform duration-200 group-hover:scale-110">
-              <img src="assets/icons/linkedin.png" alt="LinkedIn Learning Badge" class="h-10 w-10 object-contain opacity-90 transition-opacity duration-200 group-hover:opacity-100" width="40" height="40" loading="lazy" />
-            </a>
-            <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 italic transition-colors duration-200 group-hover:text-gray-700 dark:group-hover:text-gray-200">Customer Service</p>
-          </div>
-        </div>
-      </section>
+
 
       <!-- Contact CTA -->
-      <section id="contact" class="py-10 bg-gray-50 dark:bg-gray-800 rounded-lg shadow-md px-6 md:px-10 text-center" data-aos="fade-up" data-aos-delay="300">
-        <h2 class="text-3xl font-semibold text-gray-800 dark:text-white mb-4 relative inline-block">
-          Get in Touch
-          <span class="absolute left-1/2 -translate-x-1/2 -bottom-1 h-1 w-3/4 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full"></span>
-        </h2>
-        <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">Have a project in mind, or just want to connect? Let's talk!</p>
-        <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="LinkedIn Button" class="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg text-lg">Connect on LinkedIn</a>
-          <a href="https://www.buymeacoffee.com/harisajmal" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="Buy Me a Coffee Button" class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg text-lg">☕ Buy Me a Coffee</a>
+      <section id="contact" class="py-10">
+        <div class="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-2xl p-[1px] shadow-md" data-aos="fade-up" data-aos-delay="300">
+          <div class="bg-gray-50 dark:bg-gray-900 rounded-2xl px-6 md:px-10 py-10 text-center">
+            <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mb-4">Get in Touch</h2>
+            <p class="text-lg text-gray-700 dark:text-gray-200 mb-6">Have a project in mind, or just want to connect? Let's talk!</p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+              <a href="https://www.linkedin.com/in/harisajmal/" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="LinkedIn Button" class="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg text-lg ring-1 ring-black/5 dark:ring-white/15">Connect on LinkedIn</a>
+              <a href="https://www.buymeacoffee.com/harisajmal" target="_blank" rel="noopener noreferrer" data-gtag-category="CTA" data-gtag-label="Buy Me a Coffee Button" class="px-8 py-3 bg-yellow-400 hover:bg-yellow-500 text-black font-semibold rounded-full shadow-md transform transition duration-200 hover:-translate-y-0.5 hover:shadow-lg text-lg ring-1 ring-black/5 dark:ring-white/15">☕ Buy Me a Coffee</a>
+            </div>
+            <p class="mt-4 text-sm text-gray-500 dark:text-gray-400">Currently at Sighthound &middot; Open to B2B SaaS product marketing conversations.</p>
+          </div>
         </div>
       </section>
     </main>
@@ -340,7 +414,7 @@
             once: true,
             duration: 600,
             easing: 'ease-out',
-            offset: 80
+            offset: 60
           });
         }
       });
