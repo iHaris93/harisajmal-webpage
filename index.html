@@ -138,7 +138,7 @@
             <div class="space-y-3">
               <div class="rounded-xl bg-white/80 dark:bg-gray-900/70 shadow-sm border border-blue-100/70 dark:border-blue-900/60 ring-1 ring-blue-500/10 px-4 py-3">
                 <p class="text-xs font-semibold tracking-wide text-gray-500 dark:text-gray-400 uppercase mb-1">Experience</p>
-                <p class="text-gray-900 dark:text-gray-50">6+ years in B2B SaaS product marketing</p>
+                <p class="text-gray-900 dark:text-gray-50"><span id="experience-years"></span> in B2B SaaS product marketing</p>
               </div>
               <div class="rounded-xl bg-white/80 dark:bg-gray-900/70 shadow-sm border border-blue-100/70 dark:border-blue-900/60 ring-1 ring-blue-500/10 px-4 py-3">
                 <p class="text-xs font-semibold tracking-wide text-gray-500 dark:text-gray-400 uppercase mb-1">Focus</p>
@@ -149,7 +149,7 @@
                 <p class="text-gray-900 dark:text-gray-50">HubSpot, Squarespace, Webflow, GSC, GA4, Warp</p>
               </div>
             </div>
-            <div class="mt-6 space-y-3">
+            <div class="mt-14 space-y-3">
               <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Certifications</h3>
               <ul class="space-y-2 text-sm text-gray-600 dark:text-gray-300">
                 <li>
@@ -172,7 +172,7 @@
                 </li>
               </ul>
             </div>
-            <div class="mt-6 space-y-3">
+            <div class="mt-14 space-y-3">
               <h3 class="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">Recent Experience</h3>
               <div class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
                 <p><span class="font-semibold text-gray-900 dark:text-gray-50">2023 - Present</span>: B2B Product Marketing . Sighthound Inc.</p>
@@ -182,8 +182,9 @@
             </div>
           </div>
           <div class="max-w-2xl mx-auto md:mx-0">
-            <p class="mb-6">Experienced Product Marketing Manager specializing in B2B Tech and SaaS, with 5+ years of hands-on experience in content strategy, SEO, process automation, and inbound marketing. I come from a software development background, which helps me understand the technical side of products and translate it into value-driven messaging that resonates with buyers.</p>
-            <p class="mb-6">I'm a strong advocate of AI-first work productivity; using AI tools, agents, and automation to scale content, optimize workflows, and move faster without losing quality. From HubSpot to CapCut, GSC to GPT; if it saves time and adds value, I'm using it.</p>
+            <p class="mb-6">I help B2B SaaS teams turn complex products into clear, compelling stories that drive adoption and growth. With <span id="about-years"></span> of hands-on experience across product marketing, content, SEO, inbound, and automation, I focus on making products easier to understand, easier to sell, and easier to scale.</p>
+            <p class="mb-6">I come from a software development background, which means I understand how products are built, where they break, and what actually matters to technical and non-technical buyers. That context lets me create messaging and content that is grounded in the product, not just the pitch.</p>
+            <p class="mb-6">I work AI-first by default. I use text generation tools, agents, and automation to scale content, tighten workflows, and move faster without compromising on quality. From HubSpot to CapCut, GSC to GPT, if it saves time and compounds output, I'm using it.</p>
             <p class="font-semibold mb-3">What you'll find me doing at <a href="https://www.sighthound.com" class="text-blue-400 hover:underline" target="_blank" rel="noopener noreferrer">Sighthound</a>:</p>
             <ul class="list-disc list-inside mb-6 space-y-1.5">
               <li class="text-gray-700 dark:text-gray-200">Running inbound marketing strategies</li>
@@ -325,7 +326,16 @@
       darkToggle.addEventListener('click', () => { const isDark = htmlEl.classList.toggle('dark'); localStorage.setItem('theme', isDark ? 'dark':'light'); setToggleLabel(isDark); });
 
       // Year
-      document.getElementById('year').textContent = new Date().getFullYear();
+      const currentYear = new Date().getFullYear();
+      document.getElementById('year').textContent = currentYear;
+
+      // Dynamic experience years since 2020
+      const yearsSince2020 = currentYear - 2020;
+      const experienceLabel = `${yearsSince2020}+ years`;
+      const experienceYearsEl = document.getElementById('experience-years');
+      const aboutYearsEl = document.getElementById('about-years');
+      if (experienceYearsEl) experienceYearsEl.textContent = experienceLabel;
+      if (aboutYearsEl) aboutYearsEl.textContent = experienceLabel;
 
       // GA4: generic handler for elements with data-gtag-* attributes
       function bindGtagClicks(){
